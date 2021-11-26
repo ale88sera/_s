@@ -1,3 +1,6 @@
 body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
+	background-repeat: no-repeat;
+	background-size: auto 100vh;
+    background-position: 50% 0;
 }
