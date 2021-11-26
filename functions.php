@@ -152,12 +152,15 @@ function subliquidawp_scripts() {
 add_action( 'wp_enqueue_scripts', 'subliquidawp_scripts' );
 
 /**
- * Add google font
+ * Add font families
  */
-function wp_add_google_fonts() {
-	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,500;0,700;1,300;1,400&display=swap', false ); 
+function wp_add_custom_fonts() {
+	// Add google font
+	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,500;0,700;1,300;1,400&display=swap', false );
+	// Add font awesome
+	wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css' );
 	}
-add_action( 'wp_enqueue_scripts', 'wp_add_google_fonts' );
+add_action( 'wp_enqueue_scripts', 'wp_add_custom_fonts' );
 
 /**
  * Implement the Custom Header feature.
