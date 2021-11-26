@@ -152,6 +152,14 @@ function subliquidawp_scripts() {
 add_action( 'wp_enqueue_scripts', 'subliquidawp_scripts' );
 
 /**
+ * Add google font
+ */
+function wp_add_google_fonts() {
+	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,500;0,700;1,300;1,400&display=swap', false ); 
+	}
+add_action( 'wp_enqueue_scripts', 'wp_add_google_fonts' );
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
