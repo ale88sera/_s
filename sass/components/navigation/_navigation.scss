@@ -1,12 +1,14 @@
 .main-navigation {
 	display: block;
-	width: 100%;
+	margin-left: auto;
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
-		padding-left: 0;
+		padding-right: 2em;
+
+		gap: 2em;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
