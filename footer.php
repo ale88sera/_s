@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://subliquida.com/', 'subliquidawp' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://https://wordpress.org/', 'WordPress' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Proudly powered by %s', 'subliquidawp' ), 'WordPress' );
