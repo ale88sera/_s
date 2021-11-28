@@ -1,0 +1,29 @@
+.home.page { margin: 0; height: 100%;}
+.home > .site {
+    > * {
+        margin: 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+
+    .site-header {
+        flex: 0;
+    }
+
+    .site-main {
+        flex: 1;
+        p > a {
+            background: $color__background-transparent;
+            padding: .35em .75em;
+        }
+    }
+    
+    .site-footer {
+        flex: 0;
+        width: 100%;
+    }
+}
+// @import "no-sidebar";
