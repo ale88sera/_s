@@ -11,9 +11,34 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer hover-background">
+		<div class="split">
+			<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-2',
+						'menu_id'        => 'footer-menu-1',
+						'menu_class'        => 'footer-menu',
+					)
+				);
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-4',
+						'menu_id'        => 'social-menu',
+						'menu_class'        => 'footer-menu social-menu',
+					)
+				);
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-3',
+						'menu_id'        => 'footer-menu-2',
+						'menu_class'        => 'footer-menu',
+					)
+				);
+			?>
+		</div>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://https://wordpress.org/', 'WordPress' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'WordPress' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Proudly powered by %s', 'subliquidawp' ), 'WordPress' );
