@@ -25,12 +25,12 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class("sub-custom-bg"); ?>>
+<body <?php body_class("sub-custom-bg no-sidebar"); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'subliquidawp' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header hover-background">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -51,7 +51,7 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'subliquidawp' ); ?><i class="fa-solid fa-bars"></i></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'subliquidawp' ); ?><i class="fas fa-bars"></i></button>
 			<?php
 			wp_nav_menu(
 				array(
