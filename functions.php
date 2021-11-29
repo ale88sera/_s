@@ -51,6 +51,9 @@ if ( ! function_exists( 'subliquidawp_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'subliquidawp' ),
+				'menu-2' => esc_html__( 'Footer-1', 'subliquidawp' ),
+				'menu-3' => esc_html__( 'Footer-2', 'subliquidawp' ),
+				'menu-4' => esc_html__( 'Social', 'subliquidawp' ),
 			)
 		);
 
