@@ -1,5 +1,5 @@
-.home.page { margin: 0; height: 100%;}
-.home > .site {
+.post, .page { margin: 0; height: 100%;}
+.site {
     > * {
         margin: 0;
     }
@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    height: 100%;
 
     .site-header {
         flex: 0;
@@ -30,7 +31,7 @@
 }
 
 @media screen and (min-width: 37.5em) {
-    .home > .site .site-main {
+    .site .site-main {
         margin: auto;
         padding: 0;
         width: 90vw;
