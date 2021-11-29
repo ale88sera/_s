@@ -1,18 +1,13 @@
-
-    .site-header, .site-footer {
-        background: $color__background-transparent;
-        backdrop-filter: blur(3px);
-        padding: 1rem 0.5rem;
-        position: relative;
-        z-index: 10;
-    }
-    .site-header, .site-branding {
-        display: flex;
-        align-items: center;
-        gap: 1em;
-    }
-    .site-title a { 
-        color: $color__text-main;
-        margin: 0;
-        padding: 0;
-    }
+.site-header, .site-branding {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.site-header {
+    padding: 1rem 0.5rem;
+}
+.site-title a { 
+    color: $color__text-main;
+    margin: 0;
+    padding: 0;
+}
