@@ -15,15 +15,28 @@
 
     .site-main {
         flex: 1;
+        padding: 0 1em;
         p > a {
             background: $color__background-transparent;
             padding: .35em .75em;
         }
+
+        
     }
     
     .site-footer {
         flex: 0;
-        width: 100%;
     }
 }
+
+@media screen and (min-width: 37.5em) {
+    .home > .site .site-main {
+        margin: auto;
+        padding: 0;
+        width: 90vw;
+
+    }
+}
+
 // @import "no-sidebar";
+
