@@ -1,0 +1,26 @@
+.site-footer {
+    padding: 1rem 0.5rem;
+    text-align: center;
+    width: 100%;
+
+    .site-info {
+        margin-top: 2em;
+        font-size: .8em;
+        font-weight: 100;
+    }
+}
+
+.footer-menu {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+    &.social-menu {
+        height: 100%;
+        align-items: center;
+
+        // === ADDITIONAL LINES FOR ICONS === //
+        // display: flex;
+        // flex-direction: row;
+        // gap: 1em;
+    }
+}
