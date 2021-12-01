@@ -3,7 +3,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
     background-position: 50% 0;
-    box-shadow: inset 0 0 5em 5em $color__background-transparent;
+	position: relative;
 }
 @media screen and (min-width: 37.5em) {
 	body {
