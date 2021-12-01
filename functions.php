@@ -166,6 +166,14 @@ function wp_add_custom_fonts() {
 add_action( 'wp_enqueue_scripts', 'wp_add_custom_fonts' );
 
 /**
+ * Set up excerpt length.
+ */
+function my_excerpt_length($length){
+	return 12;
+	}
+add_filter('excerpt_length', 'my_excerpt_length', 999);
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
