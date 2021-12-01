@@ -10,4 +10,11 @@
     color: $color__text-main;
     margin: 0;
     padding: 0;
+    font-size: 1.5em;
+}
+.site-branding {
+    >div p {
+        margin: 0;
+        font-size: .8em;
+    }
 }
