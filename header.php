@@ -25,12 +25,15 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class("sub-custom-bg no-sidebar"); ?>>
+<body <?php body_class("sub-custom-bg no-sidebar vignette-radial"); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'subliquidawp' ); ?></a>
 
 	<header id="masthead" class="site-header hover-background">
+		
+	
+	
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -40,15 +43,20 @@
 				<?php
 			else :
 				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<div>
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
 			$subliquidawp_description = get_bloginfo( 'description', 'display' );
 			if ( $subliquidawp_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $subliquidawp_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			</div>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
+
+		<!-- TO NOT DISPLAY HEADER NAV IN UNDER-CONSTRUCTION PAGE -->
+		<?php if (! is_page('under-construction')) : ?>
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'subliquidawp' ); ?><i class="fas fa-bars"></i></button>
@@ -61,4 +69,6 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+
+	<?php endif; ?>
 	</header><!-- #masthead -->

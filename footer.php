@@ -12,6 +12,10 @@
 ?>
 
 	<footer id="colophon" class="site-footer hover-background">
+	
+	<!-- TO NOT DISPLAY FOOTER NAV IN UNDER-CONSTRUCTION PAGE -->
+	<?php if (! is_page('under-construction')) : ?>
+	
 		<div class="split">
 			<?php
 				wp_nav_menu(
@@ -37,8 +41,10 @@
 				);
 			?>
 		</div>
+	<?php endif; ?>
+
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'WordPress' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'WordPress' ) ); ?>" target="_blank">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Proudly powered by %s', 'subliquidawp' ), 'WordPress' );
@@ -47,9 +53,10 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'subliquidawp' ), 'subliquidawp', '<a href="https://alesera.eu/">Alessandro Serafini</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'subliquidawp' ), 'subliquidawp', '<a href="https://alesera.eu/"  target="_blank">Alessandro Serafini</a>' );
 				?>
 		</div><!-- .site-info -->
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
