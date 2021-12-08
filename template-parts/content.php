@@ -13,7 +13,7 @@
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="entry-title hover-background" style="padding: .5em">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
@@ -22,8 +22,8 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				subliquidawp_posted_on();
-				subliquidawp_posted_by();
+				// subliquidawp_posted_on();
+				// subliquidawp_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -31,7 +31,7 @@
 
 	<?php subliquidawp_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div class="entry-content hover-background" style="padding: 1em">
 		<?php
 		the_content(
 			sprintf(
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php subliquidawp_entry_footer(); ?>
+		<!-- <?php subliquidawp_entry_footer(); ?> -->
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
