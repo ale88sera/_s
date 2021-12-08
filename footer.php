@@ -53,7 +53,7 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'subliquidawp' ), 'subliquidawp', '<a href="https://alesera.eu/"  target="_blank">Alessandro Serafini</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'subliquidawp' ), 'subliquidawp', '<a href="https://alesera.eu/"  target="_blank">___</a>' );
 				?>
 		</div><!-- .site-info -->
 
