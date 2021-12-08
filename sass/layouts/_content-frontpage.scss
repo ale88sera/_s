@@ -4,21 +4,19 @@
         margin: 0;
     }
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     margin: 0;
-    height: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
 
     position: relative;
     z-index: 2;
 
     .site-header {
-        flex: 0;
     }
 
     .site-main {
-        flex: 1;
         padding: 0 1em;
         p > a {
             background: $color__background-transparent;
@@ -29,7 +27,6 @@
     }
     
     .site-footer {
-        flex: 0;
     }
 }
 
