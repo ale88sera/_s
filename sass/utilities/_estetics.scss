@@ -24,6 +24,13 @@
     position: absolute;
     z-index: 1;
     top: 0; left: 0; bottom: 0; right: 0;
-    background: radial-gradient(circle, transparent 30%, $color__background-transparent 110%);
+    background: radial-gradient(circle, $clr--primary-alpha2-900 0%, $clr--primary-900 150%);
     pointer-events: none;
   }
+
+
+  .subwp-wrapper {
+    max-width: $size__site-main-column-big-screen;
+    margin: auto;
+    width: 96vw;
+}

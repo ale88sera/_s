@@ -2,6 +2,8 @@
     padding: 1rem 0.5rem;
     text-align: center;
     width: 100%;
+    position: relative;
+    z-index: 5;
 
     .site-info {
         margin: 2em auto 0;
