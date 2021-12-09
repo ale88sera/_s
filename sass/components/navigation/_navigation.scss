@@ -98,15 +98,39 @@
 	}
 
 	.nav-links {
-		display: flex;
+		position: fixed;
+		// width: 100%;
+		width: 94vw;
+		// max-width: $size__site-main-column-big-screen;
+		z-index: 5;
+		top: 50%;
+		left: 3vw;
+		// margin: auto;
+
+		display: grid;
+		grid-template-rows: 100%;
+		grid-template-columns: auto 1fr auto;
+
+	}
+
+	.nav-previous, .nav-next {
+		// flex: 1 0 50%;
+		a {
+			background-color: $color__background-transparent;
+			padding: .35em;
+			margin: .15em;
+			border-radius: 50%;
+			font-size: 1.8rem;
+		}
 	}
 
 	.nav-previous {
-		flex: 1 0 50%;
+		left: 0;
 	}
 
 	.nav-next {
 		text-align: end;
-		flex: 1 0 50%;
+		right: 0;
 	}
+
 }
