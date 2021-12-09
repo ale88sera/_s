@@ -1,10 +1,15 @@
-.site-header, .site-branding {
+.site-branding {
     display: flex;
     align-items: center;
     gap: 1em;
 }
 .site-header {
-    padding: 1rem 0.5rem;
+    padding: 0.25rem 1rem;
+    .subwp-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
 }
 .site-title a { 
     color: $color__text-main;
