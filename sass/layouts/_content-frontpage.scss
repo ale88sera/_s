@@ -2,12 +2,12 @@
 .site {
     margin: 0;
     min-height: 100%;
+    position: relative;
+    z-index: 2;
+    
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
-
-    position: relative;
-    z-index: 2;
 
     .site-header {
     }
@@ -19,8 +19,6 @@
             font-weight: 100;
             color: $color__text-main;
         }
-
-        
     }
     
     .site-footer {
