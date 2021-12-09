@@ -1,9 +1,5 @@
-.post, .page { margin: 0; height: 100%;}
+.post, .page { margin: 0;}
 .site {
-    > * {
-        margin: 0;
-    }
-
     margin: 0;
     min-height: 100%;
     display: grid;
@@ -19,8 +15,9 @@
     .site-main {
         padding: 0 1em;
         p > a {
-            background: $color__background-transparent;
-            padding: .35em .75em;
+            text-decoration: underline;
+            font-weight: 100;
+            color: $color__text-main;
         }
 
         
