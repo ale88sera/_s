@@ -33,42 +33,47 @@
 	<header id="masthead" class="site-header hover-background">
 		
 	
-	
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		<div class="subwp-wrapper">
+			<div class="site-branding">
 				<?php
-			else :
-				?>
-				<div>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				the_custom_logo();
+				if ( is_front_page() && is_home() ) :
+					?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php
+				else :
+					?>
+					<div>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<?php
+				endif;
+
+				$subliquidawp_description = get_bloginfo( 'description', 'display' );
+
+				if ( $subliquidawp_description || is_customize_preview() ) :
+					?>
+					<p class="site-description"><?php echo $subliquidawp_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				</div>
+				<?php endif; ?>
+
+			</div><!-- .site-branding -->
+
+			<!-- TO NOT DISPLAY HEADER NAV IN UNDER-CONSTRUCTION PAGE -->
+			<?php if (! is_page('under-construction')) : ?>
+
+			<nav id="site-navigation" class="main-navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'subliquidawp' ); ?><i class="fas fa-bars"></i></button>
 				<?php
-			endif;
-			$subliquidawp_description = get_bloginfo( 'description', 'display' );
-			if ( $subliquidawp_description || is_customize_preview() ) :
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
 				?>
-				<p class="site-description"><?php echo $subliquidawp_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			</div>
+			</nav><!-- #site-navigation -->
 			<?php endif; ?>
-		</div><!-- .site-branding -->
+		
+		</div>
 
-		<!-- TO NOT DISPLAY HEADER NAV IN UNDER-CONSTRUCTION PAGE -->
-		<?php if (! is_page('under-construction')) : ?>
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'subliquidawp' ); ?><i class="fas fa-bars"></i></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-
-	<?php endif; ?>
 	</header><!-- #masthead -->

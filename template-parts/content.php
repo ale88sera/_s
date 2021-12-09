@@ -47,7 +47,6 @@
 				wp_kses_post( get_the_title() )
 			)
 		);
-
 		wp_link_pages(
 			array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'subliquidawp' ),
@@ -55,6 +54,7 @@
 			)
 		);
 		?>
+		</div>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
