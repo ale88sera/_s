@@ -779,7 +779,6 @@ textarea {
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	outline: orangered 1px solid;
 	float: left;
 	position: absolute;
 	top: 100%;
@@ -799,7 +798,7 @@ textarea {
 }
 
 .main-navigation ul ul a {
-	width: auto;
+	width: 12ch;
 }
 
 .main-navigation ul li:hover > ul,
@@ -829,6 +828,22 @@ textarea {
 	display: block;
 }
 
+.main-navigation.toggled > div > ul {
+	position: absolute;
+	z-index: 10;
+	inset: 0;
+	top: 5.9em;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+}
+
+.main-navigation.toggled > div > ul li {
+	font-size: 3rem;
+}
+
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
@@ -836,8 +851,10 @@ textarea {
 	.main-navigation ul {
 		display: flex;
 	}
-	.sub-menu {
+	.main-navigation .sub-menu {
 		flex-direction: column;
+		padding: 1em;
+		background: rgba(17, 14, 9, 0.75);
 	}
 }
 
