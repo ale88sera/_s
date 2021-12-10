@@ -16,11 +16,17 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<?php
+	if ( is_front_page() || is_single() ) :
+	?>
 	<style>
 		body.sub-custom-bg {
 			background-image: url("<?php the_post_thumbnail_url() ?>");
 		}
 	</style>
+	<?php
+	endif;
+	?>
 
 	<?php wp_head(); ?>
 </head>
@@ -67,7 +73,7 @@
 				wp_nav_menu(
 					array(
 						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
+						'menu_id'        => 'primary-menu'
 					)
 				);
 				?>
