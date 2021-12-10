@@ -56,6 +56,6 @@ function subliquidawp_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function subliquidawp_customize_preview_js() {
-	wp_enqueue_script( 'subliquidawp-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), subliquidawp_VERSION, true );
+	wp_enqueue_script( 'subliquidawp-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), SUBLIQUIDAWP_VERSION, true );
 }
 add_action( 'customize_preview_init', 'subliquidawp_customize_preview_js' );
