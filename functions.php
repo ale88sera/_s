@@ -7,9 +7,9 @@
  * @package subliquidawp
  */
 
-if ( ! defined( 'subliquidawp_VERSION' ) ) {
+if ( ! defined( 'SUBLIQUIDAWP_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'subliquidawp_VERSION', '1.0.0' );
+	define( 'SUBLIQUIDAWP_VERSION', '1.0.2' );
 }
 
 if ( ! function_exists( 'subliquidawp_setup' ) ) :
@@ -143,10 +143,10 @@ add_action( 'widgets_init', 'subliquidawp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function subliquidawp_scripts() {
-	wp_enqueue_style( 'subliquidawp-style', get_stylesheet_uri(), array(), subliquidawp_VERSION );
+	wp_enqueue_style( 'subliquidawp-style', get_stylesheet_uri(), array(), SUBLIQUIDAWP_VERSION );
 	wp_style_add_data( 'subliquidawp-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'subliquidawp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), subliquidawp_VERSION, true );
+	wp_enqueue_script( 'subliquidawp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), SUBLIQUIDAWP_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
