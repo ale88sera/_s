@@ -43,7 +43,7 @@ add_action( 'after_setup_theme', 'subliquidawp_woocommerce_setup' );
  * @return void
  */
 function subliquidawp_woocommerce_scripts() {
-	wp_enqueue_style( 'subliquidawp-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), subliquidawp_VERSION );
+	wp_enqueue_style( 'subliquidawp-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), SUBLIQUIDAWP_VERSION );
 
 	$font_path   = WC()->plugin_url() . '/assets/fonts/';
 	$inline_font = '@font-face {
