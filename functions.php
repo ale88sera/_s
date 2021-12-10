@@ -9,7 +9,7 @@
 
 if ( ! defined( 'SUBLIQUIDAWP_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'SUBLIQUIDAWP_VERSION', '1.0.2' );
+	define( 'SUBLIQUIDAWP_VERSION', '1.0.3' );
 }
 
 if ( ! function_exists( 'subliquidawp_setup' ) ) :
