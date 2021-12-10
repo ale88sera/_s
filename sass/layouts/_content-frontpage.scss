@@ -28,9 +28,13 @@
 @media screen and (min-width: 37.5em) {
     .site .site-main {
         margin: auto;
-        padding: 0;
+        padding: 0 4em;
         width: 90vw;
 
+        p {
+            max-width: 65ch;
+            line-height: 160%;
+        }
     }
 }
 
