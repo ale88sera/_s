@@ -76,6 +76,7 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	background: $clr--primary-alpha-900;
 }
 .main-navigation.toggled > div > ul {
 	position: absolute;
