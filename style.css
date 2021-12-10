@@ -4,7 +4,7 @@ Theme URI: http://alesera.eu/
 Author: alesera.eu
 Author URI: http://alesera.eu/
 Description: Description
-Version: 1.0.2
+Version: 1.0.3
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -1169,10 +1169,6 @@ textarea {
 	max-width: 60em;
 	margin: auto;
 	width: 96vw;
-}
-
-.page-id-2 .entry-title {
-	color: red !important;
 }
 
 /*# sourceMappingURL=style.css.map */
