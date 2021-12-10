@@ -33,7 +33,7 @@
 			}
 
 			a {
-				width: 200px;
+				width: 12ch;
 			}
 
 			:hover > a,
@@ -77,6 +77,20 @@
 .main-navigation.toggled ul {
 	display: block;
 }
+.main-navigation.toggled > div > ul {
+	position: absolute;
+	z-index: 10;
+	inset: 0;
+	top: 5.9em;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+	li {
+		font-size: 3rem;
+	}
+}
 
 @media screen and (min-width: 37.5em) {
 
@@ -86,6 +100,11 @@
 
 	.main-navigation ul {
 		display: flex;
+	}
+	.main-navigation .sub-menu {
+		flex-direction: column;
+		padding: 1em;
+		background: $clr--primary-alpha-900;
 	}
 }
 
@@ -99,13 +118,10 @@
 
 	.nav-links {
 		position: fixed;
-		// width: 100%;
 		width: 94vw;
-		// max-width: $size__site-main-column-big-screen;
 		z-index: 5;
 		top: 50%;
 		left: 3vw;
-		// margin: auto;
 
 		display: grid;
 		grid-template-rows: 100%;
