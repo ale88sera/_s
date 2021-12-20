@@ -1,7 +1,7 @@
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
 
-$size__site-main-column-big-screen: 60em;
+$size__site-main-column-big-screen: 64em;
 
 // layer hierarchy
 $subwp__layer_level_0: 0;
@@ -15,3 +15,8 @@ $subwp__layer_content: $subwp__layer_level_1;
 $subwp__layer_main-nav: $subwp__layer_level_2;
 $subwp__layer_main-nav__subnav: $subwp__layer_level_3;
 $subwp__layer_inner-nav: $subwp__layer_level_4;
+
+
+// HEADER
+
+$subwp__custom-logo-size: 7em;

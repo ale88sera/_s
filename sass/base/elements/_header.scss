@@ -4,7 +4,11 @@
     gap: 1em;
 }
 .site-header {
-    // padding: 0.25rem 1rem;
+    position: relative;
+    padding-block: 1em;
+    padding-inline-start: $subwp__custom-logo-size;
+    padding-inline-end: .25em;
+
     .subwp-wrapper {
         display: flex;
         align-items: center;
