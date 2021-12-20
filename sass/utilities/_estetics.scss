@@ -22,7 +22,7 @@
 .vignette-radial::after {
     content: '';
     position: absolute;
-    z-index: 1;
+    z-index: $subwp__layer_body;
     top: 0; left: 0; bottom: 0; right: 0;
     background: radial-gradient(circle, $clr--primary-alpha2-900 0%, $clr--primary-900 150%);
     pointer-events: none;
